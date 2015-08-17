@@ -10,27 +10,61 @@
 		<meta content="telephone=no,email=no" name="format-detection">
 		<meta content="fullscreen=yes,preventMove=no" name="ML-Config"><meta name="keywords" content="生活小记,生活费用收支明细,艾融星,airongxing,ARX,门户网站制作,SAE,艾融星web网页制作,web网页制作" />
         <meta name="description" content="生活小记,生活费用收支明细,艾融星,门户网站制作,艾融星开发网站" />
-		<title>生活小记-艾融星（ARX）|生活费用收支明细</title>
     	<link rel="shortcut icon" href="image/favicon.ico" />
-		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+		<title>生活小记-艾融星（ARX）|生活费用收支明细</title>
+
+		<!--菜单动态效果样式-->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/menu_sideslide.css" />
+
 		<link rel="stylesheet" href="css/style.css">
 		<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
 	</head>
-	<body>
-		<div data-role="page" id="index">
-			<header class="header">
+	<body class="bg_image">
+		<div class="container">
+			<header class="header" style="position:fixed;top:0;left:0;">
 				<a href="#index" data-transition="flow" class="left_icon"></a>
 				<div class="logo"></div>
-				<a href='#contact' data-transition="flow" class="right_icon"></a>
+				<a href='#contact' data-transition="flow" class="right_icon" id="open-button"></a>
 			</header>
-			<section class="section">
-				
-			</section>
-		</div>
-
-
-
-		
+			<div class="menu-wrap">
+				<nav class="menu">
+					<div class="icon-list">
+						<a href="#"><span></span></a>
+						<a href="#"><span></span></a>
+						<a href="#"><span>Favorites</span></a>
+						<a href="#"><span>Alerts</span></a>
+						<a href="#"><span>Messages</span></a>
+						<a href="#"><span>Comments</span></a>
+						<a href="#"><span>Analytics</span></a>
+						<a href="#"><span>Reading List</span></a>
+					</div>
+				</nav>
+				<button class="close-button" id="close-button">Close Menu</button>
+			</div>
+			<div class="content-wrap">
+				<div class="content">
+					<header class="codrops-header">
+						<h1>Off-Canvas Menu Effects <span>Showing (off-canvas) menus stylishly</span></h1>
+						<nav class="codrops-demos">
+							<a href="index.html">Top Side</a>
+							<a class="current-demo" href="sideslide.html">Side Slide</a>
+							<a href="cornerbox.html">Corner Box</a>
+							<a href="cornerbox_nested.html">Nested Corner Box</a>
+							<a href="topexpand.html">Top Expand</a>
+							<a href="cornermorph.html">Corner Morph</a>
+							<a href="elastic.html">Elastic</a>
+							<a href="bubble.html">Bubble</a>
+							<a href="wave.html">Wave</a>
+						</nav>
+					</header>
+					<!-- Related demos -->
+				</div>
+			</div><!-- /content-wrap -->
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/main.js"></script>
 	</body>
-		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
 </html>
