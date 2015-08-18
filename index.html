@@ -28,6 +28,29 @@
 
 		<link rel="stylesheet" href="css/style.css">
 		<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript">
+		$(function(){
+			$('.right_btn').bind('click',function(){
+				var tmp = $('.menu-inner').attr('tmp');
+				if (tmp=="clicked"){
+					$('.menu-inner').animate({
+						'width':'200px',
+						'height':'360px',
+					},500,function(){
+						$(this).attr('tmp','click');
+					});
+				}else{
+					$('.menu-inner').animate({
+						'width':'0px',
+						'height':'0px',
+					},500,function(){
+						$(this).attr('tmp','clicked');
+					});
+				}
+				
+			});
+		});
+		</script>
 	</head>
 	<body class="bg_image">
 		<div id="index" class="container demo-1" data-role="page">
@@ -39,7 +62,7 @@
 			<div class="menu-wrap">
 				<nav class="menu">
 					<div class="icon-list">
-						<a href="#index" data-transition="flow"><span>首页</span></a>
+						<a href="#index" data-transition="flow" data-direction="reverse"><span>首页</span></a>
 						<a href="#" data-transition="flow"><span>主首页</span></a>
 						<a href="#income" data-transition="flow"><span>收入记账</span></a>
 						<a href="#" data-transition="flow"><span>支出记账</span></a>
@@ -64,9 +87,9 @@
 				<div class="logo"></div>
 				<a href='#' data-transition="flow" class="right_icon right_btn"></a>
 			</header>
-			<nav class="menu-inner">
-				<ul class="">
-					<a href="#index" data-transition="flow"><li>首页</li></a>
+			<nav class="menu-inner" tmp="clicked">
+				<ul class="common-menu">
+					<a href="#index" data-transition="flow" data-direction="reverse"><li>首页</li></a>
 					<a href="#" data-transition="flow"><li>主首页</li></a>
 					<a href="#income" data-transition="flow"><li>收入记账</li></a>
 					<a href="#" data-transition="flow"><li>支出记账</li></a>

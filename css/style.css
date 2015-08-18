@@ -15,4 +15,7 @@ ul li {list-style-type:none;}
 /*body样式*/
 .content-inner {position:relative;top:60px;left:0;background:none;}
 .content-inner .content {background:none;}
-.menu-inner {position:fixed;top:60px;right:0;}
+.menu-inner {position:fixed;top:60px;right:0;height:0;width:0;overflow: hidden;z-index: 1002;}
+
+.common-menu {width:200px;padding:0;margin:0;}
+.common-menu li {font-size:1.15em;padding:15px 0;margin:5px 0;background:#7EC0EE;font-weight: 700;color:#fff;text-align: center}
